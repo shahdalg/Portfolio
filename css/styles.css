@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: 000000;
+    padding-bottom: 2rem;
+    margin: 20px;;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Skip Link */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0a6ebd;
+    color: white;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: top 0.3s ease;
+  }
+  
+  .skip-link:focus {
+    top: 10px;
+  }
+  
+  /* Header */
+  .profile-section {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: sticky;
+    top: 0;
+    background-color: #f1f5f9;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 1rem;
+    z-index: 999;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #navbar a {
+    color: #0a6ebd;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #navbar button {
+    color: #0a6ebd;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    padding: 10px;
+  }
+
+  #navbar button:hover {
+    background-color: lightgrey;
+  }
+  
+
+  #navbar a .active,
+#navbar a.active button {
+  background-color: #dbeafe; /* light blue */
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+  
+  /* Sections */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  section {
+    margin-top: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #0a6ebd;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Projects and Experience Cards */
+  .project, .job {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 1rem;
+  }
+  
+  .skill-icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .skill-icon img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .skill-icon span {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .contact {
+    padding-bottom: 100px;
+  }
+  
+  /* Contact */
+  .contact a {
+    color: #0a6ebd;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #0a6ebd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #084d94;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    padding: 1rem 0;
+    margin-top: 3rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .project, .job {
+      padding: 0.8rem;
+    }
+  }
+  
+    #education,
+    #experience,
+    #contact,
+    #skills,
+    #projects,
+    #home 
+    {
+        scroll-margin-top: 100px;
+    }
+  
