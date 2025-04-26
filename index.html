@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -26,14 +27,21 @@
 
 
   <main id="main">
+
     <section class="home" id="home">
 
   <div class = "profile-section">
     <img src="images/profile.JPG" alt="Photo of Shahd Alghurbani" class="profile-pic" />
     <h1>Shahd Alghurbani</h1>
-    <p>Computer Science + UX @ University of Michigan</p>
+    <p>Computer Science (BS) | User Experience & Design Minor | University of Michigan</p>
   </div>
 
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/shahd-alghurbani-76039a217"><img src="images/icons/linkedin.png" alt="linkedIn Logo" style="width:42px;height:42px;"></a>
+
+    <a href="https://github.com/shahdalg"><img src="images/icons/githubsocial.png" alt="linkedIn Logo" style="width:42px;height:42px;"></a>
+
+  </div>
 
       <h2>About Me</h2>
       <p>I’m a CS undergrad passionate about UX, accessibility, and using technology for social good. I’m currently focused on building intuitive digital experiences for nonprofits and learning through hands-on development and design.</p>
@@ -44,15 +52,52 @@
       <div class="project">
         <h3>Tech for Social Good Website</h3>
         <p>Led development of a nonprofit club website in collaboration with a UX graduate student. Worked on wireframing and prototyping in Figma and implemented designs in SquareSpace and Framer.</p>
+
+        <div class="project-buttons">
+          <a href="https://www.figma.com/design/KM6rKZB6fcobPsgrxnvHqN/T4SG-Website-Design?node-id=116-60&p=f&t=0cTHWmOefEfSYHja-0" target="_blank" class="project-button">
+            <img src="images/icons/figma.svg" alt="Figma Icon" class="button-icon" />
+            Figma
+          </a>
+        </div>
+
+
       </div>
       <div class="project">
         <h3>Ballet & Books Portal</h3>
         <p>Built a cloud-based portal for a literacy nonprofit using Next.js, React, TypeScript, and AWS. Added features for data management and role-based access, improving usability for admins and volunteers.</p>
+
+        <div class="project-buttons">
+          <a href="https://www.figma.com/design/QSh3yZAKvU1pDFAGVbAeKp/Ballet-and-Books?node-id=0-1&t=WOXXMlaBsqQvBJPN-0" target="_blank" class="project-button">
+            <img src="images/icons/figma.svg" alt="Figma Icon" class="button-icon" />
+            Figma
+          </a>
+          <a href="https://github.com/BalletandBooks/BalletandBooks/tree/main/new" target="_blank" class="project-button">
+            <img src="images/icons/github.svg" alt="GitHub Icon" class="button-icon" />
+            GitHub
+          </a>
+        </div>
+
       </div>
+
+
       <div class="project">
         <h3>Piazza Post Classifier</h3>
         <p>Created a machine learning model using NLP to categorize EECS 280 Piazza posts. Gained experience with log-probability scores and container ADTs.</p>
+
+
+        <div class="project-buttons">
+  
+          <a href="https://github.com/shahdalg/piazzaPostClassifier" target="_blank" class="project-button">
+            <img src="images/icons/github.svg" alt="GitHub Icon" class="button-icon" />
+            GitHub
+          </a>
+        </div>
+
+        
       </div>
+
+
+
     </section>
 
     <section class="skills" id="skills">
@@ -62,39 +107,39 @@
           <img src="images/icons/figma.svg" alt="Figma" />
           <span>Figma</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/html5.svg" alt="HTML" />
           <span>HTML</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/css.svg" alt="CSS" />
           <span>CSS</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/javascript.svg" alt="JavaScript" />
           <span>JavaScript</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/java.svg" alt="Java" />
           <span>Java</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/python.svg" alt="Python" />
           <span>Python</span>
         </div>
         <div class="skill-icon">
           <img src="images/icons/c++.svg" alt="C++" />
           <span>C++</span>
-        </div>
-        <div class="skill-icon">
+        </div> 
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/c.svg" alt="C" />
           <span>C</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/react.svg" alt="React" />
           <span>React</span>
         </div>
-        <div class="skill-icon">
+        <div class="skill-icon" id = "skill-icon">
           <img src="images/icons/github.svg" alt="GitHub" />
           <span>GitHub</span>
         </div>
@@ -111,31 +156,40 @@
         <h3>Tutor – Educare Student Services</h3>
         <p>Provided academic support and tutoring in STEM subjects to middle and high school students, developing strong communication and leadership skills.</p>
       </div>
+      </section>
 
-      <h2>Community Involvement</h2>
-      <div class="job">
-        <h3>Blood Program Leader – American Red Cross</h3>
-        <p>Coordinated and led four successful blood drives, contributing to a significant increase in local donations while building experience in planning and outreach.</p>
-      </div>
-    </section>
 
     <section class="education" id="education">
-      <h2>Education</h2>
-      <p><strong>University of Michigan – Ann Arbor</strong><br>
-      B.S. in Computer Science (Aug 2021 – Dec 2025)</p>
+        <h2>Education</h2>
+        
+        <div class="job"> <!-- Reusing the 'job' class for the card style -->
+          <h3>University of Michigan – Ann Arbor</h3>
+          <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
+          <p><strong>Minor:</strong> User Experience and Design</p>
+          <p><strong>Graduation Date:</strong> December 2025</p>
+          <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Web Development, Practical Data Science, Computer Organization, Needs Assessment and Usability Testing</p>
+        </div>
+      
+      </section>
     </section>
 
     <section class="contact" id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:shahd.alg.cs@gmail.com">shahd.alg.cs@gmail.com</a></p>
-      <p><a href="https://linkedin.com/in/shahd-alghurbani-76039a217" target="_blank">LinkedIn</a></p>
       
       <form action="https://formspree.io/f/mpwdzvao" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      
         <button class="button" type="submit">Submit Form</button>
       </form>
+      
 
     </section>
   </main>

@@ -1,12 +1,14 @@
 /* General Styles */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #1a1a1a;
-    background: 000000;
+    color: #1a1a1a; /* very dark text */
+    background: #ffffff; /* white background */
     padding-bottom: 2rem;
-    margin: 20px;;
+    margin: 0;
   }
+  
+  
   
   html {
     scroll-behavior: smooth;
@@ -31,10 +33,16 @@ body {
     top: 10px;
   }
   
-  /* Header */
+  header 
+  {
+    margin: 0;
+    padding: 0;
+    height: 0;
+  }
+
   .profile-section {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
   
   .profile-pic {
@@ -43,6 +51,14 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+  }
+
+  .social-icons
+  {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
   }
   
   /* Navbar */
@@ -63,13 +79,14 @@ body {
   }
   
   #navbar a {
-    color: #0a6ebd;
+    color: #2c2c2c; /* dark gray text */
     text-decoration: none;
     font-weight: 500;
-  }
+  }  
+  
   
   #navbar button {
-    color: #0a6ebd;
+    color: #2c2c2c;
     text-decoration: none;
     font-weight: 500;
     border-radius: 20px;
@@ -105,7 +122,7 @@ body {
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: #0a6ebd;
+    color: #4e8cd8
   }
   
   h3 {
@@ -145,17 +162,51 @@ body {
     height: 48px;
     object-fit: contain;
     margin-bottom: 0.5rem;
-    filter: grayscale(100%);
     transition: filter 0.3s ease;
   }
-  
-  .skill-icon img:hover {
-    filter: grayscale(0%);
-  }
-  
+
+
+  /* Seemless Skill Icon bigger icon Effect without moving shifting elements down*/
+  .skill-icon:hover {
+    transform: scale(1.2);
+}
+
   .skill-icon span {
     font-size: 0.9rem;
     color: #333;
+  }
+
+  .project-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .project-button, .button {
+    background-color: #000000; /* black */
+    color: #ffffff; /* white text */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .project-button:hover, .button:hover {
+    background-color: #a7c7e7;
+    color: #1a1a1a;
+    transform: scale(1.05);
+  }
+  .button-icon:hover {
+    filter: brightness(0) invert(1); 
+
+  }
+  
+  .button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1); 
   }
 
   .contact {
@@ -193,7 +244,7 @@ body {
   
   .button {
     padding: 0.5rem 1rem;
-    background-color: #0a6ebd;
+    background-color: #2c2c2c;;
     color: white;
     border: none;
     border-radius: 4px;
@@ -202,14 +253,16 @@ body {
   }
   
   .button:hover {
-    background-color: #084d94;
+    color: white;
+    background-color: #565656;
+    
   }
   
   /* Footer */
   footer {
     text-align: center;
     font-size: 0.9rem;
-    color: #888;
+    color: #2c2c2c;
     padding: 1rem 0;
     margin-top: 3rem;
   }
@@ -221,13 +274,16 @@ body {
       height: 100px;
     }
   
-    h2 {
-      font-size: 1.5rem;
+     h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #4e8cd8
     }
   
     .project, .job {
       padding: 0.8rem;
     }
+
   }
   
     #education,
